@@ -15,5 +15,12 @@
             "Remove-Item \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\"",
             "Move-Item \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc-bak.mo\" -Destination \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\""
         ]
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/Bill-Haku/kawaii-gcc/releases",
+        "jsonpath": "$..tag_name"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Bill-Haku/kawaii-gcc/releases/download/$version/zh-kawaii.mo"
     }
 }
