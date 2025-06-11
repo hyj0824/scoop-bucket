@@ -13,7 +13,6 @@
         "Move-Item \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\" -Destination \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc-bak.mo\"",
         "sudo powershell New-Item -ItemType SymbolicLink -Path \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\" -Target \"$dir\\zh-kawaii.mo\"",
         "setx LANGUAGE zh_CN"
-    
     ],
     "uninstaller": {
         "script": [
