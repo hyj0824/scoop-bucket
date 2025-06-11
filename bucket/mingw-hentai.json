@@ -19,7 +19,7 @@
         "script": [
             "Remove-Item \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\"",
             "Move-Item \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc-bak.mo\" -Destination \"$(appdir mingw-lite)\\current\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\"",
-            "REG delete HKCU\Environment /F /V LANGUAGE"
+            "REG delete HKCU\\Environment /F /V LANGUAGE"
         ]
     },
     "checkver": {
